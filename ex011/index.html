@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <!-- pocture cria um conteiner com diversos elementos source
+        para um elemento especifico(uma imagem)-->
+
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">    
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios e HTML5</p>
+     
+    <!-- na tag audio tem q utilizar o autoplay pra musica comeca tocar automaticamente -->
+    
+    <audio preload="metadata" controls loop>
+        <source src="midia/X2Download.com - Borges - Lado Nerd (prod. Ajaxx) (128 kbps).mp3"  type="audio/mpeg">
+    </audio>
+    <p>Se o seu navegador não reproduzir clique <a href="https://www.youtube.com/watch?v=pPYMJQ_n8U8" target="_blank" hel="external">aqui</a></p>
+</body>
+</html>
